@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Željko vs. Davor: Bitka za Ćevape!</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h1>Željko vs. Davor: Bitka za Ćevape!</h1>
+
+    <!-- Mode Selection Buttons -->
+    <div id="menu">
+        <h2>Odaberi Način Igre:</h2>
+        <button id="singlePlayerBtn">Single Player (Željko)</button>
+        <button id="1v1Btn">1 vs 1 (Željko vs Davor)</button>
+    </div>
+
+    <!-- Game Area (Initially hidden) -->
+    <div id="gameArea" style="display: none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="scores">
+            <p>Željko (Strelice): <span id="score1">0</span></p>
+            <p id="p2ScoreDisplay" style="display: none;">Davor (WASD): <span id="score2">0</span></p> <!-- Hidden initially -->
+        </div>
+        <p id="controlsInfo">Koristi strelice (Arrow Keys) za kretanje.</p>
+    </div>
+
+
+    <script src="src/game.js"></script>
+</body>
+</html>
